@@ -1,2 +1,0 @@
-# flashapp
-UCC_proyect
