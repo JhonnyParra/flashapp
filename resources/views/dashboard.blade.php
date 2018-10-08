@@ -1,5 +1,5 @@
 {{-- load basic site structure --}}
-@extends('layouts.html')
+@extends('Layouts.app')
 
 {{-- set page title --}}
 @section('page_title', $title)
