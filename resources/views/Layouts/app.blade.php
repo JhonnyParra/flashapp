@@ -8,7 +8,7 @@
 </head>
 <body>
   {{-- header asset compotent --}}
-  @component('Assets.header')
+  @component('Assets.header', ['login' => $login])
   @endcomponent
 
   {{-- main content of web site :v --}}

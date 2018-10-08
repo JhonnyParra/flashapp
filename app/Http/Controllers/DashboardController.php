@@ -6,7 +6,8 @@ class DashboardController extends Controller {
 
   public function index() {
     $params = [
-      'title' => 'welcome weee',
+      'title' => 'Flashapp | dashboard',
+      'login' => FALSE,
     ];
 
     return view('dashboard', $params);
