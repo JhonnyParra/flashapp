@@ -4,6 +4,17 @@
 
 // Variables
 @import "variables";
+@import "base/fonts";
+@import "components/header";
+@import "components/footer";
+@import "components/buttons";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'lato-regular';
+}
+
+body {
+  background: $f-app-color;
+}

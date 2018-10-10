@@ -1,0 +1,11 @@
+button {
+  padding: 8px 30px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  &.btn {
+    &-blue {
+      color: white;
+      background: $f-app-color;
+    }
+  }
+}
