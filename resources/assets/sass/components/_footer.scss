@@ -1,0 +1,34 @@
+footer {
+  background: white;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+
+  .footer-icons {
+    margin: 0px 20%;
+    text-align: center;
+    .soontm {
+      text-align: left;
+      padding: 15px 50px;
+    }
+  }
+  .i-container {
+
+    display: inline-block;
+    margin: 0px 20px;
+
+    .f-icon {
+      height: 50px;
+      width: 52px;
+      display: inherit;
+      &-android {
+        background: url("../../images/google-play-store.svg") 0px 0px no-repeat;
+      }
+      &-ios {
+        background: url("../../images/apple-store.svg") 0px 0px no-repeat;
+      }
+    }
+  }
+
+}

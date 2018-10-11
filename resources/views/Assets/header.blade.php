@@ -1,5 +1,6 @@
 <header>
   <div id="logo">
+    <span id="site-logo"></span>
     <span id="flashapp-name">Flashapp</span>
   </div>
   <div id ="search-login">
