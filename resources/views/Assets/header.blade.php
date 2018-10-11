@@ -7,7 +7,7 @@
     @if ($login == TRUE)
       <span class="user">prueba</span> 
     @else
-      <button class="btn-blue login">Iniciar Sesión</button>
+      <input class="btn btn-blue login" type="button" value="Iniciar Sesión" />
     @endif
   </div>
 </header>

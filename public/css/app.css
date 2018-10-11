@@ -56,11 +56,11 @@ header {
       position: absolute;
       right: 0px; }
 
-button {
+.btn {
   padding: 8px 30px;
   border-radius: 3px;
   font-size: 0.8em; }
-  button.btn-blue {
+  .btn-blue {
     color: white;
     background: #39abf2; }
 
