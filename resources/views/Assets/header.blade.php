@@ -1,4 +1,4 @@
-<header>
+<header class="no-loaded">
   <div id="logo">
     <span id="site-logo"></span>
     <span id="flashapp-name">Flashapp</span>

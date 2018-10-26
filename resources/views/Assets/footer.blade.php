@@ -1,4 +1,4 @@
-<footer>
+<footer class="no-loaded">
   <div class="footer-icons">
     <p class="soontm">Próximamente:</p>
     <div class="i-container">

@@ -94,6 +94,45 @@ footer {
     color: white;
     background: #39abf2; }
 
+.loader-back {
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  text-align: center; }
+
+.loader-container {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  top: 25vh; }
+
+.loader {
+  position: absolute;
+  z-index: 20;
+  border: 3px solid transparent;
+  border-top: 3px solid #0d62a2;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  -webkit-animation: loader 2s linear infinite; }
+
+.flashapp-image {
+  position: absolute;
+  z-index: 21;
+  height: 80px;
+  width: 80px;
+  background: url("../../images/logo.svg") 15px 8px no-repeat;
+  background-size: cover;
+  margin: 70px 0px 0px 78px; }
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -109,3 +148,6 @@ body {
 #map {
   height: 300px;
   width: 50%; }
+
+.no-loaded {
+  display: none; }

@@ -5,6 +5,7 @@
 @import "components/header";
 @import "components/footer";
 @import "components/buttons";
+@import "components/loader";
 
 * {
   padding: 0px;
@@ -24,4 +25,8 @@ body {
 #map {
   height: 300px;
   width: 50%;
+}
+
+.no-loaded {
+  display: none;
 }
