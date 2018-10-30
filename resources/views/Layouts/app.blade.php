@@ -10,7 +10,8 @@
   @show
   <title>@yield('page_title')</title>
 </head>
-<body id="app">
+<body>
+  <div id ="app">
   {{-- loader --}}  
   @component('Components.loader')
   @endcomponent
@@ -28,5 +29,6 @@
   {{-- footer asset component --}}
   @component('Assets.footer')
   @endcomponent
+  <div>
 </body>
 </html>

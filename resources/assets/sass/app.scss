@@ -22,6 +22,16 @@ body {
   margin-bottom: 150px;
 }
 
+.loaded {
+  animation-name: show;
+  animation-duration: 0.3s;
+}
+
+@keyframes show {
+  from {left:-100px; opacity: 0;}
+  to {left: 0px; opacity: 1;}
+}
+
 #map {
   height: 300px;
   width: 50%;

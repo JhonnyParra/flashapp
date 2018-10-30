@@ -4,7 +4,7 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-//window.Vue = require('vue');
+//window.Vue = require('vue')
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -13,16 +13,32 @@
  */
 
 //Vue.component('example', require('./components/Example.vue'));
+(function() {
 
-const app = new Vue({
-  el: '#app',
-  loader: function () {
-    const loader = document.getElementById('loader')
-    const site = document.querySelector('.no-loaded')
-    site.classList.remove('no-loaded')
-    loader.classList.add('no-loaded')
-
+  const index = {
+    loader:  () => {
+      console.log('here')
+      const loader = document.getElementById('loader')
+      const site = document.querySelectorAll('.no-loaded')
+      site.forEach((value) => {
+        value.classList.remove('no-loaded')
+        value.classList.add('loaded')
+      })
+      loader.classList.add('no-loaded')
+    },
+    onload: () => {
+      return setTimeout(index.loader, 2500)
+    }
   }
-});
 
-setTimeout(Vue.loader, 3000)
+  window.onload = () => {
+    index.onload()
+    function initMap() {
+      return new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      })
+    }
+    const map = initMap()
+  }
+})()
