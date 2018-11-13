@@ -30,6 +30,7 @@ header {
     vertical-align: top;
     float: right;
     position: relative;
+    text-align: right;
     .find {
       display: inline-block;
       max-width: 300px;
@@ -46,8 +47,9 @@ header {
     .login {
       display: inline-block;
       margin: 10px 10px 0px;
-      position: absolute;
-      right: 0px;
+    }
+    .sign-up {
+      display: inline-block;
     }
   }
 }

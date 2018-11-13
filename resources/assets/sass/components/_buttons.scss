@@ -7,4 +7,11 @@
     color: white;
     background: $f-app-color;
   }
+  &-white {
+    color: $f-app-color;
+    background: white;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -13,6 +13,7 @@
  */
 
 //Vue.component('example', require('./components/Example.vue'));
+
 (function() {
 
   const index = {
@@ -40,5 +41,26 @@
       })
     }
     const map = initMap()
+
+// Login and sign up modal
+    var el = {};
+    el = (function() {
+      return {
+        signUp: document.querySelector('#sign-up-btn'),
+        ṕopupUp: document.querySelector('#sign-up-pop')
+      }
+    })()
+    
+    var sign_up = true
+    el.signUp.onclick = function() {
+      if(sign_up) {
+        el.ṕopupUp.classList.remove('no-show')
+        sign_up = false
+      }
+      else {
+        el.ṕopupUp.classList.add('no-show')
+        sign_up = true
+      }
+    }
   }
 })()
