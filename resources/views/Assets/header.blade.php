@@ -2,6 +2,7 @@
 @if ($login != true)
 <div class="pop-back no-show" id="sign-up-pop">
   <form action="post" id="sign-up">
+    <span class="cross"></span>
     <h2>Registro</h2>
     <input type="text" id="name" placeholder="Nombre"/>
     <input type="text" id="last_name" placeholder="Apellido"/>
@@ -9,7 +10,7 @@
     <input type="text" id="email" placeholder="Correo"/>
     <input type="password" id="pass" placeholder="Contraseña"/>
     <input type="password" id="re_pass" placeholder="Reingresa la contraseña"/>
-    <input type="button" value="Continuar" class="btn-white"/>
+    <input type="button" value="Continuar" class="btn btn-white"/>
   </form>
 </div>
 @endif

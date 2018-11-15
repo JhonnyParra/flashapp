@@ -5,6 +5,8 @@
   z-index: 1000;
   background: rgba(0,0,0,0.7);
   margin: auto;
+  animation-name: show;
+  animation-duration: 0.3s;
 
   #sign-up {
   margin: 20vh auto 0px;
@@ -12,6 +14,7 @@
   text-align: center;
   background: $f-app-color;
   width: 50vw;
+  position: relative;
     h2 {
       color: white;
     }

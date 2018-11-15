@@ -36,8 +36,8 @@
     index.onload()
     function initMap() {
       return new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: {lat: 4.626181, lng: -74.069106},
+        zoom: 17
       })
     }
     const map = initMap()

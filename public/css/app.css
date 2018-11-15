@@ -100,6 +100,27 @@ footer {
   .btn:hover {
     cursor: pointer; }
 
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.3; }
+  .cross:after, .cross:before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background: #0d62a2;
+    position: absolute; }
+  .cross:after {
+    transform: rotate(45deg); }
+  .cross:before {
+    transform: rotate(-45deg); }
+  .cross:hover {
+    cursor: pointer;
+    opacity: 1; }
+
 .loader-back {
   background: white;
   width: 100%;
@@ -145,13 +166,16 @@ footer {
   height: 100vh;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.7);
-  margin: auto; }
+  margin: auto;
+  animation-name: show;
+  animation-duration: 0.3s; }
   .pop-back #sign-up {
     margin: 20vh auto 0px;
     padding: 15px 0px;
     text-align: center;
     background: #39abf2;
-    width: 50vw; }
+    width: 50vw;
+    position: relative; }
     .pop-back #sign-up h2 {
       color: white; }
     .pop-back #sign-up input {

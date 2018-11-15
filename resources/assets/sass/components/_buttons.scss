@@ -15,3 +15,29 @@
     cursor: pointer;
   }
 }
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  opacity: 0.3;
+  &:after, &:before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background: $f-app-logo;
+    position: absolute;
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
