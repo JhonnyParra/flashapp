@@ -47,20 +47,28 @@
     el = (function() {
       return {
         signUp: document.querySelector('#sign-up-btn'),
-        ṕopupUp: document.querySelector('#sign-up-pop')
+        signIn: document.querySelector('#login-btn'),
+        popupUp: document.querySelector('#sign-up-pop'),
+        popUpIn: document.querySelector('#sign-in-pop'),
+        cross: document.querySelectorAll('.cross')
       }
     })()
     
     var sign_up = true
-    el.signUp.onclick = function() {
-      if(sign_up) {
-        el.ṕopupUp.classList.remove('no-show')
-        sign_up = false
-      }
-      else {
-        el.ṕopupUp.classList.add('no-show')
-        sign_up = true
-      }
+    el.signUp.onclick = () => {
+      el.popupUp.classList.remove('no-show')
     }
+
+    el.signIn.onclick = () => { 
+      el.popUpIn.classList.remove('no-show')
+    }
+
+    el.cross.forEach((value) => { 
+      value.onclick = () => {
+        let id = '#' + value.id.replace('cross-', '') + '-pop'
+        document.querySelector(id).classList.add('no-show')
+      }
+    })
+
   }
 })()

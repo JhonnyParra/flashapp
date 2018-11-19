@@ -169,27 +169,28 @@ footer {
   margin: auto;
   animation-name: show;
   animation-duration: 0.3s; }
-  .pop-back #sign-up {
+  .pop-back .form-pop {
     margin: 20vh auto 0px;
     padding: 15px 0px;
     text-align: center;
     background: #39abf2;
     width: 50vw;
-    position: relative; }
-    .pop-back #sign-up h2 {
+    position: relative;
+    z-index: 1200; }
+    .pop-back .form-pop h2 {
       color: white; }
-    .pop-back #sign-up input {
+    .pop-back .form-pop input {
       display: block;
       margin: 10px auto;
       width: 80%;
       height: 30px;
       border-radius: 2px;
       text-align: center; }
-      .pop-back #sign-up input::placeholder {
+      .pop-back .form-pop input::placeholder {
         text-align: center;
         color: #39abf2;
         font-family: 'lato-bold'; }
-      .pop-back #sign-up input.btn-white {
+      .pop-back .form-pop input.btn-white {
         width: auto;
         padding: 0px 50px;
         margin: 30px auto 0px; }

@@ -1,8 +1,8 @@
 {{-- login and sign-up modal's' --}}
 @if ($login != true)
 <div class="pop-back no-show" id="sign-up-pop">
-  <form action="post" id="sign-up">
-    <span class="cross"></span>
+  <form action="post" id="sign-up" class="form-pop">
+    <span class="cross" id="cross-sign-up"></span>
     <h2>Registro</h2>
     <input type="text" id="name" placeholder="Nombre"/>
     <input type="text" id="last_name" placeholder="Apellido"/>
@@ -10,6 +10,15 @@
     <input type="text" id="email" placeholder="Correo"/>
     <input type="password" id="pass" placeholder="Contraseña"/>
     <input type="password" id="re_pass" placeholder="Reingresa la contraseña"/>
+    <input type="button" value="Continuar" class="btn btn-white"/>
+  </form>
+</div>
+<div class="pop-back no-show" id="sign-in-pop">
+  <form action="post" id ="sign-in" class="form-pop">
+    <span class="cross" id="cross-sign-in"></span>
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="user" placeholder="Correo"/>
+    <input type="password" id="pass" placeholder="Contraseña"/>
     <input type="button" value="Continuar" class="btn btn-white"/>
   </form>
 </div>
